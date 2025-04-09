@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:http/http.dart' as http;
 import 'package:http_parser/http_parser.dart';
-import 'package:scanpro_dart/scanpro.dart';
+import 'package:scanpro_dart/scanpro_dart.dart';
 /// Main API client for ScanPro
 class ApiClient {
   /// HTTP client

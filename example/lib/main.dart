@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scanpro_dart/scanpro.dart';
+import 'package:scanpro_dart/scanpro_dart.dart';
 import 'package:scanpro_dart_example/examples/merge_pdf_example.dart';
 
 import 'examples/ocr_example.dart';

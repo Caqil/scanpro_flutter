@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:file_picker/file_picker.dart';
-import 'package:scanpro_dart/scanpro.dart';
+import 'package:scanpro_dart/scanpro_dart.dart';
 import 'package:scanpro_dart_example/file_utils.dart';
 import 'package:open_file/open_file.dart';
 import 'package:share_plus/share_plus.dart';

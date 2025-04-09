@@ -1,6 +1,6 @@
 
 
-import 'package:scanpro_dart/scanpro.dart';
+import 'package:scanpro_dart/scanpro_dart.dart';
 
 /// OCR options for PDF processing
 class OcrOptions {
