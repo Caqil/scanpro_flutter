@@ -1,5 +1,5 @@
 name: scanpro_dart
-description: "A new Flutter plugin project."
+description: "Convert JPG to PDF, unlock, compress, merge, split & OCR PDFs with ScanPro."
 version: 0.0.1
 homepage: https://scanpro.cc
 
