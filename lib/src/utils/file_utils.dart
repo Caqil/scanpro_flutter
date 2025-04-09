@@ -18,9 +18,9 @@ class FileUtils {
       }
 
       // Get the HTTP response
-      final response = await http
-          .get(Uri.parse(url), headers: {'x-api-key': ScanProConfig.apiKey})
-          .timeout(ScanProConfig.timeout);
+      final response = await http.get(Uri.parse(url), headers: {
+        'x-api-key': ScanProConfig.apiKey
+      }).timeout(ScanProConfig.timeout);
 
       if (response.statusCode != 200) {
         throw Exception('Failed to download file: ${response.statusCode}');
@@ -36,9 +36,8 @@ class FileUtils {
         final contentDisposition = response.headers['content-disposition'];
         if (contentDisposition != null &&
             contentDisposition.contains('filename=')) {
-          downloadFilename = contentDisposition
-              .split('filename=')[1]
-              .replaceAll('"', '');
+          downloadFilename =
+              contentDisposition.split('filename=')[1].replaceAll('"', '');
         } else {
           // Use the URL path as a fallback
           downloadFilename = url.split('/').last.split('?').first;

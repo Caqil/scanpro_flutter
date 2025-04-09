@@ -3,10 +3,10 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'package:mime/mime.dart';
-import 'package:path/path.dart';
 import 'package:http_parser/http_parser.dart'
     as http_parser; // Added for MediaType
 import '../config/scanpro_config.dart';
+import 'package:path/path.dart' as path;
 
 /// Utility class for HTTP operations
 class HttpUtils {
@@ -44,7 +44,7 @@ class HttpUtils {
         final fieldName = entry.key;
         final file = entry.value;
 
-        final fileName = basename(file.path);
+        final fileName = path.basename(file.path);
         final mimeType =
             lookupMimeType(file.path) ?? 'application/octet-stream';
 
