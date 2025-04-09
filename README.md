@@ -46,7 +46,7 @@ Run `flutter pub get` to install the package.
 
 ## Configuration
 
-You need a ScanPro API key to use this plugin. Initialize the plugin in your app before using any of its features:
+You need a [ScanPro API](https://scanpro.cc/en/login) key to use this plugin. Initialize the plugin in your app before using any of its features:
 
 ```dart
 import 'package:scanpro_dart/scanpro_flutter.dart';
@@ -225,7 +225,7 @@ To run the example:
 
 ## API Documentation
 
-For detailed API documentation, see the [API Reference](https://docs.scanpro.cc/api).
+For detailed API documentation, see the [API Reference](https://docs.scanpro.cc/en/developer-api).
 
 ## Error Handling
 

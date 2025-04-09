@@ -1,7 +1,7 @@
 /// Configuration class for ScanPro Flutter plugin
 class ScanProConfig {
   /// Base URL for the ScanPro API
-  static String baseUrl = 'https://api.scanpro.cc';
+  static String baseUrl = 'https://scanpro.cc';
 
   /// API key for authentication
   static String apiKey = '';

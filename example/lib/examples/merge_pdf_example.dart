@@ -14,7 +14,7 @@ class MergePdfExample extends StatefulWidget {
 }
 
 class _MergePdfExampleState extends State<MergePdfExample> {
-  List<File> _selectedFiles = [];
+  final List<File> _selectedFiles = [];
   bool _isLoading = false;
   String _resultMessage = '';
   String? _mergedFilePath;
