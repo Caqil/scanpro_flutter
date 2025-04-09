@@ -1,11 +1,8 @@
 import 'dart:io';
 import 'dart:convert';
 import 'package:http_parser/http_parser.dart';
-import 'package:scanpro_dart/scanpro_flutter.dart';
+import 'package:scanpro_dart/scanpro.dart';
 import 'package:http/http.dart' as http;
-import '../api_client.dart';
-import '../models/api_response.dart';
-import '../models/pdf_models.dart';
 
 /// API endpoints for PDF tools
 class PdfToolsApi extends BaseApi {

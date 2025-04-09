@@ -49,7 +49,7 @@ Run `flutter pub get` to install the package.
 You need a [ScanPro API](https://scanpro.cc/en/login) key to use this plugin. Initialize the plugin in your app before using any of its features:
 
 ```dart
-import 'package:scanpro_dart/scanpro_flutter.dart';
+import 'package:scanpro_flutter/scanpro_flutter.dart';
 
 void main() {
   // Initialize ScanPro with your API key
@@ -75,7 +75,7 @@ ScanProConfig.configure(
 
 ```dart
 import 'dart:io';
-import 'package:scanpro_dart/scanpro_flutter.dart';
+import 'package:scanpro_flutter/scanpro_flutter.dart';
 
 // Convert PDF to Word
 Future<void> convertPdfToWord(File pdfFile) async {
@@ -108,7 +108,7 @@ Future<void> convertWordToPdf(File wordFile) async {
 
 ```dart
 import 'dart:io';
-import 'package:scanpro_dart/scanpro_flutter.dart';
+import 'package:scanpro_flutter/scanpro_flutter.dart';
 
 Future<void> mergePdfFiles(List<File> pdfFiles) async {
   final response = await ScanPro.api.pdfTools.mergePdfs(pdfFiles);
@@ -127,7 +127,7 @@ Future<void> mergePdfFiles(List<File> pdfFiles) async {
 
 ```dart
 import 'dart:io';
-import 'package:scanpro_dart/scanpro_flutter.dart';
+import 'package:scanpro_flutter/scanpro_flutter.dart';
 
 Future<void> protectPdf(File pdfFile, String password) async {
   final options = ProtectPdfOptions(
@@ -154,7 +154,7 @@ Future<void> protectPdf(File pdfFile, String password) async {
 
 ```dart
 import 'dart:io';
-import 'package:scanpro_dart/scanpro_flutter.dart';
+import 'package:scanpro_flutter/scanpro_flutter.dart';
 
 Future<void> extractTextFromPdf(File pdfFile) async {
   final options = OcrOptions(
@@ -185,7 +185,7 @@ Future<void> extractTextFromPdf(File pdfFile) async {
 
 ```dart
 import 'dart:io';
-import 'package:scanpro_dart/scanpro_flutter.dart';
+import 'package:scanpro_flutter/scanpro_flutter.dart';
 
 Future<void> createSearchablePdf(File pdfFile) async {
   final options = OcrOptions(
@@ -261,7 +261,7 @@ try {
 The plugin includes utility classes for working with files:
 
 ```dart
-import 'package:scanpro_dart/scanpro_flutter.dart';
+import 'package:scanpro_flutter/scanpro_flutter.dart';
 
 // Download a file from URL
 final file = await FileUtils.downloadFile(url);

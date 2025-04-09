@@ -2,10 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:http/http.dart' as http;
 import 'package:http_parser/http_parser.dart';
-import 'package:scanpro_dart/scanpro_flutter.dart';
-import '../config/scanpro_config.dart';
-import 'models/api_response.dart';
-
+import 'package:scanpro_dart/scanpro.dart';
 /// Main API client for ScanPro
 class ApiClient {
   /// HTTP client
@@ -164,8 +161,8 @@ class ApiClient {
 
       // Send the request
       final streamedResponse = await request.send().timeout(
-        ScanProConfig.timeout,
-      );
+            ScanProConfig.timeout,
+          );
       final response = await http.Response.fromStream(streamedResponse);
 
       return _handleResponse(response);

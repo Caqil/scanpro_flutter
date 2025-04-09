@@ -1,7 +1,7 @@
 library scanpro_flutter;
 
 import 'package:flutter/foundation.dart';
-import 'package:scanpro_dart/scanpro_flutter.dart';
+import 'package:scanpro_dart/scanpro.dart';
 
 // Export all APIs
 export 'src/api/api_client.dart';

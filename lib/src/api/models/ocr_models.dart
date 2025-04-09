@@ -1,4 +1,6 @@
-import 'package:scanpro_dart/scanpro_flutter.dart';
+
+
+import 'package:scanpro_dart/scanpro.dart';
 
 /// OCR options for PDF processing
 class OcrOptions {
