@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:scanpro_dart/scanpro_flutter.dart';
+import 'package:scanpro_dart_example/examples/merge_pdf_example.dart';
 
+import 'examples/ocr_example.dart';
 import 'examples/pdf_conversion_example.dart';
+import 'examples/pdf_security_example.dart';
 
 void main() {
   // Initialize ScanPro with your API key
